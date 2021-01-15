@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @available(macOS, deprecated: 10.11)
     func menu() {
-        let launch = NSMenuItem(title: "Start automatically...", action: #selector(toggle(_:)), keyEquivalent: "")
+        let launch = NSMenuItem(title: "Start automatically", action: #selector(toggle(_:)), keyEquivalent: "")
         launch.state = (start.get(path) != nil) ? .on : .off
         
         let separator = NSMenuItem.separator()
